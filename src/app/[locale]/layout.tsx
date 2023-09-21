@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from "next/head";
 import { NextIntlClientProvider } from "next-intl";
 import useRootLocalization from "@/shared/lib/hooks/useRootLocalization";
 import Header from "@/components/header";
@@ -23,9 +24,9 @@ async function RootLayout({ children, params }: { children: React.ReactNode; par
 
     return (
         <html lang={locale}>
-            <head>
+            <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            </head>
+            </Head>
             <body className={roboto.className}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <Header />
