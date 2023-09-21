@@ -3,6 +3,7 @@
 .container {
   width: 100%;
   height: calc(100vh - $headerHeight - $footerHeight);
+  height: calc(100svh - $headerHeight - $footerHeight);
   margin-top: $headerHeight;
   z-index: $zIndexContent;
 
