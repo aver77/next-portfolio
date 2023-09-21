@@ -3,12 +3,12 @@
 .container {
   width: 100%;
   height: calc(100vh - $headerHeight - $footerHeight);
-  height: calc(100svh - $headerHeight - $footerHeight);
   margin-top: $headerHeight;
   z-index: $zIndexContent;
 
   @media screen and (max-width: $phones), (max-height: $phones) {
     margin-top: $headerHeightMobile;
     height: calc(100vh - $headerHeightMobile - $footerHeightMobile);
+    height: calc(100svh - $headerHeightMobile - $footerHeightMobile);
   }
 }
