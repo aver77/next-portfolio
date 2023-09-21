@@ -4,6 +4,7 @@
   z-index: $zIndexModal;
   backdrop-filter: blur(26px);
   height: 100vh;
+  height: -webkit-fill-available;
   width: 100%;
   position: fixed;
   top: 0;
