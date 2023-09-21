@@ -70,7 +70,7 @@
         "yearsCalendaria": "November 2022 — May 2023",
         "descriptionCalendaria": "I was working on one project - developing a web IAM application from scratch. I set up the modular frontend architecture of this application in React with a custom configuration (webpack, plugins, babel). Participated in project analytics and wrote business logic based on the specifications, using the React+Typescript combination. Interacted with the design team - laid out and styled the application using figma, and also created reusable UI components based on the Ant design library. I also interacted with the backend development team - received data on Rest Api, exchanged thoughts on the implementation of various features.",
 
-        "tecom": "Теком",
+        "tecom": "Tecom",
         "locationTecom": "Nizhny Novgorod, Russia (Remote)",
         "yearsTecom": "February 2022 — November 2022",
         "descriptionTecom": "Worked on various projects: Library of UI components. A library of ready-made utilities with its own store, with various actions and selectors. 3 different built-in widgets - charts, pdf reports, graphs (was written from scratch). And I also developed main project - remote device monitoring application. I was involved in supporting existing functionality - fixing bugs and refactoring code, as well as writing new code and business logic.For each project I developed various functional React components. For the UI library these were rewritten components from material-UI, for widgets - their own isolated modules. Covered unit projects with tests using jest, as well as e2e tests using playwright.",
