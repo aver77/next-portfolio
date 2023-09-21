@@ -1,6 +1,6 @@
 "use client";
 
-import { FC } from "react";
+import { FC, Fragment } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Title, { titleTypes } from "@/shared/ui/title";
@@ -21,7 +21,7 @@ interface IBlockOfInfo {
 const BlockOfInfo: FC<IBlockOfInfo> = ({ infoTitle, info, withDots }) => {
     const t = useTranslations("home");
 
-    const infoElement = info.map((infoEl) => {
+    const infoElement = info.map((infoEl, index) => {
         if (typeof infoEl !== "string") {
             const { year, title, description, link } = infoEl;
 
@@ -31,7 +31,7 @@ const BlockOfInfo: FC<IBlockOfInfo> = ({ infoTitle, info, withDots }) => {
             const isRegularTitle = !isPhoneTitle && !isMailTitle;
 
             return (
-                <>
+                <Fragment key={"_" + index + title}>
                     <Title
                         className={cx(styles.title, styles.titleH4)}
                         text={title}
@@ -54,25 +54,27 @@ const BlockOfInfo: FC<IBlockOfInfo> = ({ infoTitle, info, withDots }) => {
                             {description}
                         </a>
                     )}
-                </>
+                </Fragment>
             );
         } else {
-            if (withDots) {
-                return (
-                    <ul>
-                        <li className={cx(styles.text, styles.li)}>
-                            <Image
-                                className={styles.squareImg}
-                                src={squareImg}
-                                alt={"img square"}
-                            />
-                            <span>{infoEl}</span>
-                        </li>
-                    </ul>
-                );
-            } else {
-                return <p className={styles.text}>{infoEl}</p>;
-            }
+            return (
+                <Fragment key={"_" + index + infoEl}>
+                    {withDots ? (
+                        <ul>
+                            <li className={cx(styles.text, styles.li)}>
+                                <Image
+                                    className={styles.squareImg}
+                                    src={squareImg}
+                                    alt={"img square"}
+                                />
+                                <span>{infoEl}</span>
+                            </li>
+                        </ul>
+                    ) : (
+                        <p className={styles.text}>{infoEl}</p>
+                    )}
+                </Fragment>
+            );
         }
     });
 
