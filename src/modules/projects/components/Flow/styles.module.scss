@@ -17,7 +17,7 @@
   }
 
   :global(.react-flow__minimap) {
-    @media screen and ((max-width: $phones) or (max-height: $phones)) {
+    @media screen and (max-width: $phones), (max-height: $phones) {
       width: 120px;
     }
   }

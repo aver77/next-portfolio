@@ -29,7 +29,7 @@
     font-size: $fsTextL;
   }
 
-  @media screen and ((max-width: $phones) or (max-height: $phones)) {
+  @media screen and (max-width: $phones), (max-height: $phones) {
     margin-bottom: $indentLow;
     margin-top: $indentDefaultSm;
   }
@@ -42,7 +42,7 @@
   column-gap: $indentDefaultSm;
   row-gap: $indentLow;
 
-  @media screen and ((max-width: $phones) or (max-height: $phones)) {
+  @media screen and (max-width: $phones), (max-height: $phones) {
     flex-wrap: wrap;
   }
 }

@@ -6,7 +6,7 @@
   margin-top: $headerHeight;
   z-index: $zIndexContent;
 
-  @media screen and ((max-width: $phones) or (max-height: $phones)) {
+  @media screen and (max-width: $phones), (max-height: $phones) {
     margin-top: $headerHeightMobile;
     height: calc(100vh - $headerHeightMobile - $footerHeightMobile);
   }

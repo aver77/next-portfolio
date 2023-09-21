@@ -14,11 +14,11 @@
   display: flex;
   justify-content: center;
 
-  @media screen and ((max-width: $ipadSm) or (max-height: $ipadSm)) {
+  @media screen and (max-width: $ipadSm), (max-height: $ipadSm) {
     padding: $indentDefaultXl $indentDefaultL;
   }
 
-  @media screen and ((max-width: $phones) or (max-height: $phones)) {
+  @media screen and (max-width: $phones), (max-height: $phones) {
     padding: $indentDefaultXl $indentDefaultSm;
   }
 }

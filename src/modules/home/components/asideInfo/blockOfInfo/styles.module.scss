@@ -6,7 +6,7 @@
 
   &H3 {
     margin-top: $indentDefaultMd;
-    @media screen and ((max-width: $phones) or (max-height: $phones)) {
+    @media screen and (max-width: $phones), (max-height: $phones) {
       margin-top: $indentDefaultSm;
     }
   }

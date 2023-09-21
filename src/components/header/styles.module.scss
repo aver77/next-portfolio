@@ -13,11 +13,11 @@
     padding: 0 6%;
   }
 
-  @media screen and ((max-width: $ipadSm) or (max-height: $ipadSm)) {
+  @media screen and (max-width: $ipadSm), (max-height: $ipadSm) {
     padding: 0 $indentDefaultMd;
   }
 
-  @media screen and ((max-width: $phones) or (max-height: $phones)) {
+  @media screen and (max-width: $phones), (max-height: $phones) {
     z-index: $zIndexHeaderMobile;
     height: $headerHeightMobile;
     padding: 0 $indentDefaultSm;
@@ -29,7 +29,7 @@
 }
 
 .linedNav {
-  @media screen and ((max-width: $ipadSm) or (max-height: $ipadSm)) {
+  @media screen and (max-width: $ipadSm), (max-height: $ipadSm) {
     border-bottom: 2px solid $light;
   }
 }
@@ -41,7 +41,7 @@
   justify-content: end;
   flex-wrap: wrap;
   gap: $indentDefaultXl;
-  @media screen and ((max-width: $phones) or (max-height: $phones)) {
+  @media screen and (max-width: $phones), (max-height: $phones) {
     gap: $indentDefaultMd;
   }
 }
@@ -51,14 +51,14 @@
   font-size: $fsTextL;
   cursor: pointer;
 
-  @media screen and ((max-width: $ipadSm) or (max-height: $ipadSm)) {
+  @media screen and (max-width: $ipadSm), (max-height: $ipadSm) {
     font-size: $fsTextMd;
   }
 }
 
 .line {
   height: 48px !important;
-  @media screen and ((max-width: $phones) or (max-height: $phones)) {
+  @media screen and (max-width: $phones), (max-height: $phones) {
     height: 32px !important;
   }
 }

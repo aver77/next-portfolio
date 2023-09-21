@@ -8,7 +8,7 @@
   font-weight: $fwBold;
   letter-spacing: 6px;
 
-  @media screen and ((max-width: $phones) or (max-height: $phones)) {
+  @media screen and (max-width: $phones), (max-height: $phones) {
     font-size: $fsTextXXL;
   }
 }
@@ -16,7 +16,7 @@
 .jobTitle {
   letter-spacing: 2px;
 
-  @media screen and ((max-width: $phones) or (max-height: $phones)) {
+  @media screen and (max-width: $phones), (max-height: $phones) {
     font-size: $fsTextXL;
   }
 }
@@ -31,7 +31,7 @@
     font-size: $fsTextDefault;
   }
 
-  @media screen and ((max-width: $phones) or (max-height: $phones)) {
+  @media screen and (max-width: $phones), (max-height: $phones) {
     margin: $indentDefaultSm 0;
   }
 }
@@ -39,7 +39,7 @@
 .experience {
   font-weight: $fwBold;
 
-  @media screen and ((max-width: $phones) or (max-height: $phones)) {
+  @media screen and (max-width: $phones), (max-height: $phones) {
     font-size: $fsTextXL
   }
 }

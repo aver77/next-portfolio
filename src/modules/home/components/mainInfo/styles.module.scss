@@ -7,11 +7,11 @@
     margin: $indentDefaultMd + $headerHeight $indentDefaultMd $indentDefaultMd $indentDefaultMd;
   }
 
-  @media screen and ((max-width: $ipadSm) or (max-height: $ipadSm)) {
+  @media screen and (max-width: $ipadSm), (max-height: $ipadSm) {
     margin: $indentDefaultMd;
   }
 
-  @media screen and ((max-width: $phones) or (max-height: $phones)) {
+  @media screen and (max-width: $phones), (max-height: $phones) {
     margin: $indentDefaultSm;
   }
 }
