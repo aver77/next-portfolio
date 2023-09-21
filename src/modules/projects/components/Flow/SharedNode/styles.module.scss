@@ -3,7 +3,7 @@
 $containerWidth: 300px;
 
 .container {
-  width: 300px;
+  width: $containerWidth;
   padding: $indentDefaultSm;
   background: $bgDarkGray;
   border-radius: $brDefault;
