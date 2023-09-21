@@ -23,6 +23,9 @@ async function RootLayout({ children, params }: { children: React.ReactNode; par
 
     return (
         <html lang={locale}>
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </head>
             <body className={roboto.className}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <Header />
