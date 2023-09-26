@@ -1,7 +1,7 @@
 {
     "header": {
-        "home": "Me",
-        "projects": "Projects"
+        "home": "Me.",
+        "projects": "Projects."
     },
     "footer": {
         "copyright": "All rights reserved copyright ©"
@@ -13,23 +13,23 @@
 
         "nameWC": "Web-chat with auto-translation",
         "descWC": "A real-time translation app, which is targeted on intercultural and interlingual communication.",
-        "extendedDescWC": "INApp is a real-time translation app for for intercultural and interlingual communication. You can choose a translation language from those offered. And from that time, all the messages in the text chat will be translated to it. Moreover, you can call any user of the application (establish a real-time video and audio connection) - after that you will be able to hear and see your interlocutor and also read the subtitles of his speech on language you chose. As for development - this is fullstack application with frontend on React, which interacts with the server-side via HTTP and WS protocols, and also recognizes speech using the Google speech-recognition API. Backend was written on NodeJs + Express with high-level microservices architecture. There are 3 services: gateway service - responsible for JWT registration and forwarding requests to other services, translation service - responsible for translate all the texts using Yandex translate API, and chats service - based on Websocket protocol, it's implement message and metadata exchange with client-side. The application was fully deployed in Azure. Frontend - using VM + nginx. Backend - using Kubernetes + terraform cluster.",
-        "stackWC": "Fullstack application based on React and NodeJs",
+        "extendedDescWC": "INApp is a real-time translation app for for intercultural and interlingual communication. You can choose a translation language from those offered. And from that time, all the messages in the text chat will be translated to it. Moreover, you can call any user of the application (establish a real-time video and audio connection) - after that you will be able to hear and see your interlocutor and also read the subtitles of his speech on language you chose. As for development - this is fullstack application with frontend on React.js, which interacts with the server-side via HTTP and WS protocols, and also recognizes speech using the Google speech-recognition API. Backend was written on NodeJs + Express with high-level microservices architecture. There are 3 services: gateway service - responsible for JWT registration and forwarding requests to other services, translation service - responsible for translate all the texts using Yandex translate API, and chats service - based on Websocket protocol, it's implement message and metadata exchange with client-side. The application was fully deployed in Azure. Frontend - using VM + nginx. Backend - using Kubernetes + terraform cluster.",
+        "stackWC": "Fullstack application based on React.js and NodeJs",
 
         "nameCompiler": "Web-compiler",
         "descCompiler": "An application that allows you to compile code in various programming languages and see the execution result.",
-        "extendedDescCompiler": "NW Compiler allows you to compile code in Python, C++ and JavaScript. Frontend was built using React and MUI. Additionally, localization and theming have been added to improve user experience. Backend was written on NodeJs + Express using monolith structure whose purpose is to compile the received code using an HTTP Post request. To compile the received code, a file with the extension corresponding to its language is created for it. And with the help of a child process (the exec module built into nodejs), compilation occurs on the machine from which the server is running. For this, pre-installed g++, node and python packages are used.",
-        "stackCompiler": "Fullstack application based on React and NodeJs",
+        "extendedDescCompiler": "NW Compiler allows you to compile code in Python, C++ and JavaScript. Frontend was built using React.js and MUI. Additionally, localization and theming have been added to improve user experience. Backend was written on NodeJs + Express using monolith structure whose purpose is to compile the received code using an HTTP Post request. To compile the received code, a file with the extension corresponding to its language is created for it. And with the help of a child process (the exec module built into nodejs), compilation occurs on the machine from which the server is running. For this, pre-installed g++, node and python packages are used.",
+        "stackCompiler": "Fullstack application based on React.js and NodeJs",
 
         "nameBC": "Dummy AI Chat",
         "descBC": "This web-application imitates interface and responses on questions like in ChatGPT.",
-        "extendedDescBC": "An application that provides the user with a fancy interface and the ability to send various questions in message format and receive answers to them from the server. It was written on React using frontend modular architecture and bundled via Vite. The main feature of this app is the use of a new feature added to the fetch API - stream processing. Data from the server arrives in chunks format. To process them, a stream is opened to read the data. Each chunk is decoded in a loop and gradually forms a response to the user, creating the effect of a chat-bot.",
-        "stackBC": "React application",
+        "extendedDescBC": "An application that provides the user with a fancy interface and the ability to send various questions in message format and receive answers to them from the server. It was written on React.js using frontend modular architecture and bundled via Vite. The main feature of this app is the use of a new feature added to the fetch API - stream processing. Data from the server arrives in chunks format. To process them, a stream is opened to read the data. Each chunk is decoded in a loop and gradually forms a response to the user, creating the effect of a chat-bot.",
+        "stackBC": "React.js application",
 
         "namePolicy": "Insurance app",
         "descPolicy": "This application has implemented a convenient insurance process, fancy UI and a lot of client functionality.",
-        "extendedDescPolicy": "Policy allows you to purchase insurance online for different types of property. This application was made to order and written on React, using Ant Design as a UI library and modular frontend modular architecture for better scalability in advance. By agreement, only part of the functionality was implemented - the main adaptive page with localization and the business process of obtaining car insurance. All the interface was made based on figma layouts made by the designer. At this point the source code of the application has been transferred to the development team for further development",
-        "stackPolicy": "React application",
+        "extendedDescPolicy": "Policy allows you to purchase insurance online for different types of property. This application was made to order and written on React.js, using Ant Design as a UI library and modular frontend modular architecture for better scalability in advance. By agreement, only part of the functionality was implemented - the main adaptive page with localization and the business process of obtaining car insurance. All the interface was made based on figma layouts made by the designer. At this point the source code of the application has been transferred to the development team for further development",
+        "stackPolicy": "React.js application",
 
         "namePortfolio": "This portfolio app",
         "descPortfolio": "In this application I wanted to tell you a little about myself and my projects. I hope it worked out :)",
@@ -53,7 +53,7 @@
         "russian": "Russian",
         "english": "English",
 
-        "aboutMe": "I have been developing SPA/web resources for 4+ years. In my projects I use modern technologies: Typescript, React, Vue, Svetle. I am well versed in design, in adaptive cross-browser layout, ES6+ syntax. I am constantly working on the architecture and business logic of web applications, writing tests, and also working with external APIs. I permanently expand my horizons in development, so I have experience writing fullstack projects, with a top-level microservice architecture on the back (stack: NodeJs, Express, Mongo, RabbitMq) using Docker, Docker-compose and cloud storages. My main skill is to quickly dive into any new project and immediately make a tangible contribution to it. The same is true when I learn new technologies. My experience allows me to do it quickly. I also know how to work in a team and find a common language!",
+        "aboutMe": "I'm creative and constantly growing Frontend developer with more than two years of experience working in various industry-leading projects and improving diverse React.js SPA and web-resources. Seeking to apply my expertise in large-scale or open-source projects, solving extraordinary problems and bringing profit to customers.",
 
         "jobTitleIt1": "JS-developer",
         "jobTitleShared": "Frontend developer",
@@ -63,21 +63,21 @@
         "it1": "IT1",
         "locationIt1": "Moscow, Russia (Remote)",
         "yearsIt1": "June 2023 — present",
-        "descriptionIt1": "Development of a corporate application portal for HP Service Manager for Gazprombank of Russia. I was involved in supporting existing functionality - refactoring existing code, fixing various defects, as well as writing new code and business logic in Javascript ES5 specification and RAD language. Used SOAP API to write new queries to retrieve data in XML and also refined existing queries.",
+        "descriptionIt1": "Development of a corporate application portal for HP Service Manager for Gazprombank of Russia.\nI was involved in supporting existing functionality - refactoring code, fixing various defects, as well as writing new code and business logic in Javascript ES5 and RAD language.\nI used SOAP API to write new queries to retrieve data in XML and also refined existing queries.",
 
         "calendaria": "Calendaria",
         "locationCalendaria": "Almaty, Kazakhstan (Remote)",
         "yearsCalendaria": "November 2022 — May 2023",
-        "descriptionCalendaria": "I was working on one project - developing a web IAM application from scratch. I set up the modular frontend architecture of this application in React with a custom configuration (webpack, plugins, babel). Participated in project analytics and wrote business logic based on the specifications, using the React+Typescript combination. Interacted with the design team - laid out and styled the application using figma, and also created reusable UI components based on the Ant design library. I also interacted with the backend development team - received data on Rest Api, exchanged thoughts on the implementation of various features.",
+        "descriptionCalendaria": "I was developing a web IAM application from scratch.\nI set up the modular frontend architecture in React.js with a custom Webpack configuration.\nParticipated in project analytics and wrote business logic based on TA.\nInteracted with design team - laid out and styled the application using figma, and also created reusable UI components based on the Ant design library, and with backend team - received data on Rest API, exchanged thoughts on the implementation of various features.",
 
         "tecom": "Tecom",
         "locationTecom": "Nizhny Novgorod, Russia (Remote)",
         "yearsTecom": "February 2022 — November 2022",
-        "descriptionTecom": "Worked on various projects: Library of UI components. A library of ready-made utilities with its own store, with various actions and selectors. 3 different built-in widgets - charts, pdf reports, graphs (was written from scratch). And I also developed main project - remote device monitoring application. I was involved in supporting existing functionality - fixing bugs and refactoring code, as well as writing new code and business logic.For each project I developed various functional React components. For the UI library these were rewritten components from material-UI, for widgets - their own isolated modules. Covered unit projects with tests using jest, as well as e2e tests using playwright.",
+        "descriptionTecom": "Worked on various projects - editor-like widgets and main high-load application.\nI was involved in supporting existing functionality - fixing bugs and refactoring code, as well as writing new code, business logic and diverse unit/e2e tests.\nI developed a lot of non-trivial components - trees, charts, graphs, pdf reports.\nMaintained and improved several libraries - corporate UI-kit with it's own storybook and a library with ready-made utilities, store, actions and selectors.",
 
         "julius": "Julius",
         "locationJulius": "London, United Kingdom (Remote)",
         "yearsJulius": "October 2021 — February 2022",
-        "descriptionJulius": "Developed an interface for a web application with neural networks on the server side. I was preparing it for release into production. Part-time work in a small team of 7 people. I was involved in rewriting the properties of Antd components in scss, and moved reused property values into scss variables. I supplemented and also completely redesigned the layout of ready-made components. Created new components (tables, highcharts dashboard). I wrote new business logic using the React+Typescript combination. To receive data from the server I used React Relay and the graphql language. Interacted with the project lead for frontend development. Implemented tasks based on the requirements he set. I exchanged thoughts with him about the implementation of various features. I used the graphql documentation server, and also discussed with the backend developer the format and the data itself transferred to queries."
+        "descriptionJulius": "I was preparing the company's main React.js application for release into production.\nRewrote layout of many components and a lot of project styles based on the requirements.\nI wrote new business logic and developed complex components such as tables, dashboards.\nInteracted with the project lead of frontend development, exchanged thoughts with him about the implementation of various features.\nTo receive data from server I used Graphql language, it's documentation server and interacted with backend developer."
     }
 }

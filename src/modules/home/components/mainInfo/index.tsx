@@ -1,10 +1,10 @@
 import { useTranslations } from "next-intl";
 
-import getCompaniesData from "@/modules/home/components/mainInfo/defaultData";
-import Company from "@/modules/home/components/mainInfo/company";
+import getCompaniesData from "./defaultData";
+import Company from "./company";
+import AboutMe from "./aboutMe";
 
 import styles from "./styles.module.scss";
-import AboutMe from "@/modules/home/components/mainInfo/aboutMe";
 
 const MainInfo = () => {
     const t = useTranslations("home");

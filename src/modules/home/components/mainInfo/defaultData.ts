@@ -15,7 +15,7 @@ const getCompaniesData = (t: any): ICompany[] => {
             companyLocation: t("locationIt1"),
             companyYears: t("yearsIt1"),
             companyDescription: t("descriptionIt1"),
-            skills: "HP Service Manager, JavaScript, RAD, SOAP API, SQL, loadash",
+            skills: "HP Service Manager, JavaScript, RAD, SOAP API, SQL, JSON",
             workingProcess: "Jira, Cisco Jabber, Onyx"
         },
         {
@@ -24,7 +24,7 @@ const getCompaniesData = (t: any): ICompany[] => {
             companyLocation: t("locationCalendaria"),
             companyYears: t("yearsCalendaria"),
             companyDescription: t("descriptionCalendaria"),
-            skills: "React, React-hooks, Redux-toolkit, Typescript, Jss, Ant design, Webpack",
+            skills: "React.js, React-hooks, Redux-toolkit, Typescript, Jss, Ant design, Webpack",
             workingProcess: "GitLab, Jira, Swagger"
         },
         {
@@ -33,7 +33,7 @@ const getCompaniesData = (t: any): ICompany[] => {
             companyLocation: t("locationTecom"),
             companyYears: t("yearsTecom"),
             companyDescription: t("descriptionTecom"),
-            skills: "React, React-hooks, Jss, material-UI, Intl, Redux, Reselect, Jest, playwright, lerna",
+            skills: "React.js, React-hooks, Jss, material-UI, Intl, Redux, Reselect, Jest, playwright, lerna",
             workingProcess: "GitLab, Jira, Microsoft teams"
         },
         {
@@ -42,7 +42,7 @@ const getCompaniesData = (t: any): ICompany[] => {
             companyLocation: t("locationJulius"),
             companyYears: t("yearsJulius"),
             companyDescription: t("descriptionJulius"),
-            skills: "React, React-hooks, React Relay, graphql, Typescript, Sass, Ant design",
+            skills: "React.js, React-hooks, React Relay, graphql, Typescript, Sass, Ant design",
             workingProcess: "GitLab, Linear, Youtrack"
         }
     ];

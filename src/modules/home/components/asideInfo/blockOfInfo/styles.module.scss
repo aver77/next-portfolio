@@ -23,7 +23,7 @@
 
 .text {
   font-size: $fsTextL;
-  margin: $indentLow 0;
+  margin: $indentDefaultXs 0;
   color: $light;
 
   @media screen and (max-width: $ipadLg) {
@@ -33,7 +33,7 @@
 
 .li {
   display: flex;
-  gap: $indentLow;
+  gap: $indentDefaultXs;
   align-items: center;
 }
 

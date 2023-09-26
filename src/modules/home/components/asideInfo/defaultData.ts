@@ -22,18 +22,15 @@ const getContactInfo = (t: any) => {
 
 const getSkillsInfo = () => {
     return [
-        "HTML5 / CSS3 / Figma",
+        "HTML / CSS / Figma",
         "JavaScript / Typescript",
-        "ReactJs (3 years)",
-        "Redux / MobX / Zustand",
-        "Jest / Playwright",
-        "VueJs",
-        "VueX",
+        "React.js / Redux / MobX / Zustand",
+        "Vue.js / VueX",
         "Sass / CSS in JS / tailwind",
         "Ant Design / Material UI",
+        "Jest / Playwright",
         "Webpack / Vite",
-        "REST API / GraphQL",
-        "Postman / Swagger",
+        "REST API / GraphQL / Postman / Swagger",
         "Clean architecture / Design patterns",
         "NodeJs / Express / MongoDB / RabbitMQ",
         "Docker / Docker-compose / Microservices",

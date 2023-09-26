@@ -52,7 +52,7 @@ export const getNodesData: (t: any) => INodesData[] = (t) =>
             link: "https://github.com/orgs/INApp-team/repositories",
             stack: t("stackWC"),
             extendedStack:
-                "React / Typescript / Zustand / Tailwind / PeerJs / SocketIO / NodeJs / Express / MongoDB / Docker / Docker-compose / Nginx / Terraform / Kubernetes"
+                "React.js / Typescript / Zustand / Tailwind / PeerJs / SocketIO / NodeJs / Express / MongoDB / Docker / Docker-compose / Nginx / Terraform / Kubernetes"
         },
         {
             name: t("nameBC"),
@@ -61,7 +61,7 @@ export const getNodesData: (t: any) => INodesData[] = (t) =>
             extendedDesc: t("extendedDescBC"),
             link: "https://github.com/aver77/hashbon-task",
             stack: t("stackBC"),
-            extendedStack: "React / Typescript / SCSS / Fetch ReadableStream"
+            extendedStack: "React.js / Typescript / SCSS / Fetch ReadableStream"
         },
         {
             name: t("nameCompiler"),
@@ -71,7 +71,7 @@ export const getNodesData: (t: any) => INodesData[] = (t) =>
             link: "https://github.com/aver77/Web-compiler",
             stack: t("stackCompiler"),
             extendedStack:
-                "React / JavaScript / Material UI / CSS in JS / i18n / NodeJs / Express / Child processes"
+                "React.js / JavaScript / Material UI / CSS in JS / i18n / NodeJs / Express / Child processes"
         },
         {
             name: t("namePolicy"),
@@ -80,7 +80,7 @@ export const getNodesData: (t: any) => INodesData[] = (t) =>
             extendedDesc: t("extendedDescPolicy"),
             link: "https://github.com/aver77/p-24-dubai",
             stack: t("stackPolicy"),
-            extendedStack: "React / Typescript / Zustand / Ant Design / SCSS Modules / i18n"
+            extendedStack: "React.js / Typescript / Zustand / Ant Design / SCSS Modules / i18n"
         },
         {
             name: t("namePortfolio"),
