@@ -16,16 +16,17 @@ import "./globalStyles.scss";
 
 export const metadata: Metadata = {
     title: "NA CV",
-    description: "Root layout of Frontend engineer CV"
+    description: "Principle Frontend engineer CV"
 };
-
 async function RootLayout({ children, params }: { children: React.ReactNode; params: any }) {
     const { locale, messages } = await useRootLocalization(params);
 
     return (
         <html lang={locale}>
+            <link rel="shortcut icon" href="/favicon.svg" />
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta charSet="UTF-8"/>
             </Head>
             <body className={roboto.className}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
