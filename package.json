@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lhci:build": "del-cli .lighthouseci && lhci autorun --config-path .lighthouserc.json",
+    "lhci mobile:build": "del-cli .lighthouseci && lhci autorun --config-path .lighthouserc.mobile.json",
+    "lhci:report": "npx lhci collect"
   },
   "dependencies": {
     "@types/node": "20.5.4",
@@ -26,6 +29,8 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.12.0",
+    "del-cli": "^5.1.0",
     "prettier": "^3.0.2"
   }
 }
