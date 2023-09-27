@@ -3,6 +3,7 @@
 $containerWidth: 300px;
 
 .container {
+  min-height: 480px;
   width: $containerWidth;
   padding: $indentDefaultSm;
   background: $bgDarkGray;
@@ -20,10 +21,15 @@ $containerWidth: 300px;
   color: $light;
   opacity: 0.8;
   font-size: $fsTextMd;
+  flex-grow: 1;
+  overflow: auto;
 }
 
 .title {
   font-weight: $fwBold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .stack {

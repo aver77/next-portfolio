@@ -43,6 +43,16 @@ $containerWidth: 700px;
 }
 
 .desc {
+  display: flex;
+  flex-direction: column;
+  gap: $indentDefaultXs;
+
+  @media screen and (max-width: $phones), (max-height: $phones) {
+    gap: $indentLow;
+  }
+}
+
+.descEl {
   line-height: $fsTextMd * 1.4;
 }
 

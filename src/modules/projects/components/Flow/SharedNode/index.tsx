@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, lazy, useState } from "react";
+import {FC, lazy, useState} from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import { INodesData } from "../defaultData";
@@ -29,6 +29,7 @@ const SharedNode: FC<TSharedNode> = ({
 }) => {
     const t = useTranslations("projects");
     const [modalVisible, setModalVisible] = useState(false);
+
     const openModal = () => setModalVisible(true);
 
     return (

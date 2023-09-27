@@ -33,7 +33,13 @@ const Modal: FC<IModal> = ({ imgSrc, link, name, desc, stack, setIsVisible, ref 
                     text={name}
                     titleType={titleTypes.h2}
                 />
-                <p className={cx(styles.text, styles.desc)}>{desc}</p>
+                <div className={styles.desc}>
+                    {desc.split("\n").map((descEl, index) => (
+                        <p className={cx(styles.text, styles.descEl)} key={index}>
+                            {descEl}
+                        </p>
+                    ))}
+                </div>
                 <div className={cx(styles.text, styles.stack)}>
                     <p className={cx(styles.bold)}>{t("projectStack")}:</p>
                     <p>{stack}</p>

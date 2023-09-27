@@ -89,7 +89,6 @@ export const getNodesData: (t: any) => INodesData[] = (t) =>
             extendedDesc: t("extendedDescPortfolio"),
             link: "https://github.com/aver77/next-portfolio",
             stack: t("stackPortfolio"),
-            extendedStack:
-                "Next.js 13v / Typescript / SCSS Modules / i18n / Framer-motion / React-flow"
+            extendedStack: "Next.js / Typescript / SCSS Modules / i18n / Framer-motion / React-flow"
         }
     ]);
