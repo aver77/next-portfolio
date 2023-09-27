@@ -32,7 +32,7 @@ const getSkillsInfo = () => {
         "Webpack / Vite",
         "REST API / GraphQL / Postman / Swagger",
         "Clean architecture / Design patterns",
-        "NodeJs / Express / MongoDB / RabbitMQ",
+        "Node.js / Express / MongoDB / RabbitMQ",
         "Docker / Docker-compose / Microservices",
         "Agile / Scrum / Kanban"
     ];

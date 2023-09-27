@@ -51,9 +51,18 @@
   font-weight: $fwBold;
 }
 
-.description {
+.descriptionUl {
   margin-bottom: $indentLow;
+}
+
+.descriptionLi {
+  display: flex;
+  gap: $indentDefaultXs;
+  align-items: baseline;
   line-height: $fsTextMd * 1.6;
+  @media screen and (max-width: $phones), (max-height: $phones) {
+    gap: $indentLow;
+  }
 }
 
 .skills {

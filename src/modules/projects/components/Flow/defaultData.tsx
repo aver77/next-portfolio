@@ -52,7 +52,7 @@ export const getNodesData: (t: any) => INodesData[] = (t) =>
             link: "https://github.com/orgs/INApp-team/repositories",
             stack: t("stackWC"),
             extendedStack:
-                "React.js / Typescript / Zustand / Tailwind / PeerJs / SocketIO / NodeJs / Express / MongoDB / Docker / Docker-compose / Nginx / Terraform / Kubernetes"
+                "React.js / Typescript / Zustand / Tailwind / PeerJs / SocketIO / Node.js / Express / MongoDB / Docker / Docker-compose / Nginx / Terraform / Kubernetes"
         },
         {
             name: t("nameBC"),
@@ -71,7 +71,7 @@ export const getNodesData: (t: any) => INodesData[] = (t) =>
             link: "https://github.com/aver77/Web-compiler",
             stack: t("stackCompiler"),
             extendedStack:
-                "React.js / JavaScript / Material UI / CSS in JS / i18n / NodeJs / Express / Child processes"
+                "React.js / JavaScript / Material UI / CSS in JS / i18n / Node.js / Express / Child processes"
         },
         {
             name: t("namePolicy"),
@@ -90,6 +90,6 @@ export const getNodesData: (t: any) => INodesData[] = (t) =>
             link: "https://github.com/aver77/next-portfolio",
             stack: t("stackPortfolio"),
             extendedStack:
-                "NextJs 13v / Typescript / SCSS Modules / i18n / Framer-motion / React-flow"
+                "Next.js 13v / Typescript / SCSS Modules / i18n / Framer-motion / React-flow"
         }
     ]);

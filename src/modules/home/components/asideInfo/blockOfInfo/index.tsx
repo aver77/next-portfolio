@@ -1,7 +1,6 @@
 "use client";
 
 import { FC, Fragment } from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Title, { titleTypes } from "@/shared/ui/title";
 import cx from "classnames";
@@ -10,8 +9,9 @@ import Line, { lineAligns } from "@/shared/ui/line";
 import { motion } from "framer-motion";
 import { smoothAppearing } from "@/shared/constants/animationProps";
 
+import SquareComponent from "@/shared/assets/svg/components/squareComponent";
 import styles from "./styles.module.scss";
-import squareImg from "@/shared/assets/svg/square.svg";
+import cssVars from "@/shared/styles/vars.module.scss";
 
 interface IBlockOfInfo {
     infoTitle: string;
@@ -62,11 +62,7 @@ const BlockOfInfo: FC<IBlockOfInfo> = ({ infoTitle, info, withDots }) => {
                     {withDots ? (
                         <ul>
                             <li className={cx(styles.text, styles.li)}>
-                                <Image
-                                    className={styles.squareImg}
-                                    src={squareImg}
-                                    alt={"img square"}
-                                />
+                                <SquareComponent color={cssVars.light}/>
                                 <span>{infoEl}</span>
                             </li>
                         </ul>

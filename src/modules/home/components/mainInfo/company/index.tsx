@@ -9,7 +9,9 @@ import cx from "classnames";
 import { motion } from "framer-motion";
 import { smoothAppearing } from "@/shared/constants/animationProps";
 
+import SquareComponent from "@/shared/assets/svg/components/squareComponent";
 import styles from "./styles.module.scss";
+import cssVars from "@/shared/styles/vars.module.scss";
 
 const Company: FC<ICompany> = ({
     jobTitle,
@@ -22,6 +24,8 @@ const Company: FC<ICompany> = ({
 }) => {
     const t = useTranslations("home");
 
+    console.log((companyDescription.includes("\n")));
+
     return (
         <motion.div {...smoothAppearing}>
             <Title
@@ -33,7 +37,16 @@ const Company: FC<ICompany> = ({
                 <span className={styles.companyName}>{companyName}</span>|
                 <span>{companyLocation}</span>|<span>{companyYears}</span>
             </div>
-            <p className={cx(styles.lightText, styles.description)}>{companyDescription}</p>
+            <ul className={cx(styles.descriptionUl)}>
+                {
+                    companyDescription.split("\n").map((descriptionEl, index) =>
+                        <li className={cx(styles.lightText, styles.descriptionLi)} key={index}>
+                            <SquareComponent color={cssVars.lightGray}/>
+                            {descriptionEl}
+                        </li>
+                    )
+                }
+            </ul>
             <div className={cx(styles.text, styles.skills)}>
                 <span className={styles.externalTitle}>{t("skills")}</span>
                 <span>: {skills}</span>
