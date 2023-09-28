@@ -1,19 +1,19 @@
 @import "src/shared/styles/vars.module.scss";
 
 .btn {
-  border-style: solid;
-  padding: $indentLow;
-  border-radius: $brDefault;
+    border-style: solid;
+    padding: $indentLow;
+    border-radius: $brDefault;
 }
 
 .light {
-  border-color: $gray;
-  background: $light;
-  color: $gray;
+    border-color: $gray;
+    background: $light;
+    color: $gray;
 }
 
 .dark {
-  border-color: $light;
-  background: $gray;
-  color: $light;
+    border-color: $light;
+    background: $gray;
+    color: $light;
 }

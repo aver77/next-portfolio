@@ -1,5 +1,5 @@
 //backgrounds
-$bgDarkGray: #323B4C;
+$bgDarkGray: #323b4c;
 $bgDarkGrayTransparent: rgba(50, 59, 76, 0.8);
 
 //z-indexes
@@ -21,10 +21,10 @@ $fwDefault: 500;
 $fwBold: 700;
 
 //colors
-$gray: #363D4E;
-$lightGray: #6B6B6B;
+$gray: #363d4e;
+$lightGray: #6b6b6b;
 $lineGray: #404545;
-$light: #FFFFFF;
+$light: #ffffff;
 
 //indents
 $indentRootPercentage: 14%;
@@ -55,8 +55,8 @@ $ipadSm: 700px;
 $phones: 500px;
 
 :export {
-  gray: #{$gray};
-  lightGray: #{$lightGray};
-  lineGray: #{$lineGray};
-  light: #{$light};
+    gray: #{$gray};
+    lightGray: #{$lightGray};
+    lineGray: #{$lineGray};
+    light: #{$light};
 }

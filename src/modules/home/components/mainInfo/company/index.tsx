@@ -24,7 +24,7 @@ const Company: FC<ICompany> = ({
 }) => {
     const t = useTranslations("home");
 
-    console.log((companyDescription.includes("\n")));
+    console.log(companyDescription.includes("\n"));
 
     return (
         <motion.div {...smoothAppearing}>
@@ -38,14 +38,12 @@ const Company: FC<ICompany> = ({
                 <span>{companyLocation}</span>|<span>{companyYears}</span>
             </div>
             <ul className={cx(styles.descriptionUl)}>
-                {
-                    companyDescription.split("\n").map((descriptionEl, index) =>
-                        <li className={cx(styles.lightText, styles.descriptionLi)} key={index}>
-                            <SquareComponent color={cssVars.lightGray}/>
-                            {descriptionEl}
-                        </li>
-                    )
-                }
+                {companyDescription.split("\n").map((descriptionEl, index) => (
+                    <li className={cx(styles.lightText, styles.descriptionLi)} key={index}>
+                        <SquareComponent color={cssVars.lightGray} />
+                        {descriptionEl}
+                    </li>
+                ))}
             </ul>
             <div className={cx(styles.text, styles.skills)}>
                 <span className={styles.externalTitle}>{t("skills")}</span>

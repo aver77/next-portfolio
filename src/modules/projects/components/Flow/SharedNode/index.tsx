@@ -1,6 +1,6 @@
 "use client";
 
-import {FC, lazy, useState} from "react";
+import { FC, lazy, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import { INodesData } from "../defaultData";
@@ -30,6 +30,28 @@ const SharedNode: FC<TSharedNode> = ({
     const t = useTranslations("projects");
     const [modalVisible, setModalVisible] = useState(false);
 
+    const descRef = useRef<HTMLParagraphElement | null>(null);
+
+    const getDesc = (desc: string) => {
+        const currentRef = descRef.current;
+        if (currentRef) {
+            const { clientHeight, scrollHeight } = currentRef;
+
+            if (clientHeight < scrollHeight) {
+                const difference = scrollHeight - clientHeight;
+                return (
+                    desc
+                        .split(" ")
+                        .splice(0, difference > 10 ? 8 : 14)
+                        .join(" ") + "..."
+                );
+            } else {
+                return desc.replaceAll("...", "");
+            }
+        }
+        return desc;
+    };
+
     const openModal = () => setModalVisible(true);
 
     return (
@@ -42,7 +64,9 @@ const SharedNode: FC<TSharedNode> = ({
             />
             <Line thickness={"2px"} />
             <p className={cx(styles.text, styles.stack)}>{stack}</p>
-            <p className={styles.desc}>{desc}</p>
+            <p ref={descRef} className={styles.desc}>
+                {getDesc(desc)}
+            </p>
             <Line thickness={"2px"} />
             <div className={styles.btnsSection}>
                 <Button onClick={openModal} variant={buttonVariants.DARK}>

@@ -62,7 +62,7 @@ const BlockOfInfo: FC<IBlockOfInfo> = ({ infoTitle, info, withDots }) => {
                     {withDots ? (
                         <ul>
                             <li className={cx(styles.text, styles.li)}>
-                                <SquareComponent color={cssVars.light}/>
+                                <SquareComponent color={cssVars.light} />
                                 <span>{infoEl}</span>
                             </li>
                         </ul>

@@ -1,22 +1,22 @@
 @import "src/shared/styles/vars.module.scss";
 
 .container {
-  background: $bgDarkGray;
-  height: $footerHeight;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background: $bgDarkGray;
+    height: $footerHeight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  @media screen and (max-width: $phones), (max-height: $phones) {
-    height: $footerHeightMobile;
-  }
+    @media screen and (max-width: $phones), (max-height: $phones) {
+        height: $footerHeightMobile;
+    }
 }
 
 .text {
-  color: $lightGray;
-  font-size: $fsSmall;
+    color: $lightGray;
+    font-size: $fsSmall;
 
-  @media screen and (max-width: $phones), (max-height: $phones) {
-    font-size: $fsESmall;
-  }
+    @media screen and (max-width: $phones), (max-height: $phones) {
+        font-size: $fsESmall;
+    }
 }
