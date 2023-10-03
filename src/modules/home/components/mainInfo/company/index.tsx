@@ -24,8 +24,6 @@ const Company: FC<ICompany> = ({
 }) => {
     const t = useTranslations("home");
 
-    console.log(companyDescription.includes("\n"));
-
     return (
         <motion.div {...smoothAppearing}>
             <Title

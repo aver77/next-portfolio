@@ -1,10 +1,11 @@
 @import "src/shared/styles/vars.module.scss";
 
 $containerWidth: 300px;
+$containerHeight: 486px;
 
 .container {
-    min-height: 480px;
-    max-height: 480px;
+    min-height: $containerHeight;
+    max-height: $containerHeight;
     width: $containerWidth;
     padding: $indentDefaultSm;
     background: $bgDarkGray;
@@ -23,7 +24,8 @@ $containerWidth: 300px;
     opacity: 0.8;
     font-size: $fsTextMd;
     flex-grow: 1;
-    overflow: auto;
+    overflow: hidden;
+    white-space: pre-wrap;
 }
 
 .title {

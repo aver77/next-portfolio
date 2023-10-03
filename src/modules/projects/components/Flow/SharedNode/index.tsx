@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, lazy, useRef, useState } from "react";
+import { FC, lazy, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import { INodesData } from "../defaultData";
@@ -30,42 +30,50 @@ const SharedNode: FC<TSharedNode> = ({
     const t = useTranslations("projects");
     const [modalVisible, setModalVisible] = useState(false);
 
+    const [nodeDesc, setNodeDesc] = useState(desc);
     const descRef = useRef<HTMLParagraphElement | null>(null);
 
-    const getDesc = (desc: string) => {
+    useLayoutEffect(() => {
         const currentRef = descRef.current;
         if (currentRef) {
+            const dotsSymbol = "...";
+
             const { clientHeight, scrollHeight } = currentRef;
 
             if (clientHeight < scrollHeight) {
                 const difference = scrollHeight - clientHeight;
-                return (
+                const separator = " ";
+
+                setNodeDesc(
                     desc
-                        .split(" ")
-                        .splice(0, difference > 10 ? 8 : 14)
-                        .join(" ") + "..."
+                        .split(separator)
+                        .splice(0, difference > 20 ? 8 : 14)
+                        .join(separator) + dotsSymbol
                 );
             } else {
-                return desc.replaceAll("...", "");
+                if (desc.includes(dotsSymbol)) {
+                    setNodeDesc(desc.replaceAll(dotsSymbol, ""));
+                }
             }
         }
-        return desc;
-    };
+    }, [desc]);
 
     const openModal = () => setModalVisible(true);
 
     return (
         <div className={styles.container}>
             <Image className={styles.projImg} src={imgSrc} alt={"project img"} />
-            <Title
-                className={cx(styles.text, styles.title)}
-                text={name}
-                titleType={titleTypes.h4}
-            />
+            <div>
+                <Title
+                    className={cx(styles.text, styles.title)}
+                    text={name}
+                    titleType={titleTypes.h4}
+                />
+            </div>
             <Line thickness={"2px"} />
             <p className={cx(styles.text, styles.stack)}>{stack}</p>
             <p ref={descRef} className={styles.desc}>
-                {getDesc(desc)}
+                {nodeDesc}
             </p>
             <Line thickness={"2px"} />
             <div className={styles.btnsSection}>
