@@ -68,7 +68,7 @@
         "calendaria": "Calendaria",
         "locationCalendaria": "Almaty, Kazakhstan (Remote)",
         "yearsCalendaria": "November 2022 — May 2023",
-        "descriptionCalendaria": "I was developing a web IAM application from scratch.\nI set up the modular frontend architecture in React.js with a custom Webpack configuration.\nParticipated in project analytics and wrote business logic based on TA.\nInteracted with design team - laid out and styled the application using figma, and also created reusable UI components based on the Ant design library, and with backend team - received data on Rest API, exchanged thoughts on the implementation of various features.",
+        "descriptionCalendaria": "I was developing a corporate application portal from scratch.\nI set up the modular frontend architecture in React.js with a custom Webpack configuration.\nParticipated in project analytics and wrote business logic based on TA.\nInteracted with design team - laid out and styled the application using figma, and also created reusable UI components based on the Ant design library, and with backend team - received data on Rest API, exchanged thoughts on the implementation of various features.",
 
         "tecom": "Tecom",
         "locationTecom": "Nizhny Novgorod, Russia (Remote)",
