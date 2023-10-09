@@ -63,7 +63,7 @@
         "it1": "IT1",
         "locationIt1": "Moscow, Russia (Remote)",
         "yearsIt1": "June 2023 — present",
-        "descriptionIt1": "Development of a corporate application portal for HP Service Manager for Gazprombank of Russia.\nI was involved in supporting existing functionality - refactoring code, fixing various defects, as well as writing new code and business logic in Javascript ES5 and RAD language.\nI used SOAP API to write new queries to retrieve data in XML and also refined existing queries.",
+        "descriptionIt1": "Development of a corporate application portal for HP Service Manager for Gazprombank of Russia.\nI was involved in supporting functionality - refactoring code, fixing various defects, as well as writing new code and business logic in Javascript ES5 and RAD language.\nI used SOAP API to write new queries to retrieve data in XML and also refined existing queries.",
 
         "calendaria": "Calendaria",
         "locationCalendaria": "Almaty, Kazakhstan (Remote)",
