@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import useRootLocalization from "@/shared/lib/hooks/useRootLocalization";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import TopScroller from "@/components/topScroller";
 
 import { Roboto } from "next/font/google";
 const roboto = Roboto({
@@ -32,6 +33,7 @@ async function RootLayout({ children, params }: { children: React.ReactNode; par
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <Header />
                     {children}
+                    <TopScroller />
                     <Footer />
                 </NextIntlClientProvider>
             </body>

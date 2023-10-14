@@ -37,7 +37,7 @@ const Header = () => {
         window.addEventListener("scroll", scrollHandler);
 
         return () => window.removeEventListener("scroll", scrollHandler);
-    }, []);
+    }, [withLine]);
 
     return (
         <header className={styles.header}>
